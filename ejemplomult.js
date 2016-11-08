@@ -1,24 +1,21 @@
-function mult(a,b,c){
+function mult(a,b,cad){
   var r=0;
-  if (c=1) {
+  if (cad=="m") {
     for (var i = 1; i <= b; i++) {
       r=a*i;
       console.log(a+"*"+i+"="+r);
     }
-  }
-  if (c=2) {
+  }else if (cad=="d") {
     for (var i = 1; i <= b; i++) {
       r=a/i;
       console.log(a+"/"+i+"="+r);
     }
-  }
-  if (c=3) {
+  }else if (cad=="s") {
     for (var i = 1; i <= b; i++) {
       r=a+i;
       console.log(a+"+"+i+"="+r);
     }
-  }
-  if (c=4) {
+  }else  if (cad=="r") {
     for (var i = 1; i <= b; i++) {
       r=a-i;
       console.log(a+"-"+i+"="+r);
@@ -27,5 +24,5 @@ function mult(a,b,c){
 }
 var x=5;
 var y=20;
-var o=3;
-console.log(mult(x,y,o));
+var cad="r";
+mult(x,y,cad);
